@@ -20,8 +20,6 @@ class ChatVC: UIViewController {
         //
         self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         self.view.addGestureRecognizer(self.revealViewController().tapGestureRecognizer())
-
-        self.revealViewController()?.rearViewRevealWidth = 100
     }
 
 
