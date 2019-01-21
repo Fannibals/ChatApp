@@ -17,6 +17,9 @@
 		AA3F913D21F599B400792A2C /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3F913C21F599B400792A2C /* ChatVC.swift */; };
 		AA3F913F21F599C400792A2C /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3F913E21F599C400792A2C /* ChannelVC.swift */; };
 		AA3F914121F5A54200792A2C /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3F914021F5A54200792A2C /* GradientView.swift */; };
+		AA3F914421F5B1FC00792A2C /* Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3F914321F5B1FC00792A2C /* Constraints.swift */; };
+		AA3F914621F5B9C500792A2C /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3F914521F5B9C500792A2C /* LoginVC.swift */; };
+		AA3F914821F5B9D900792A2C /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3F914721F5B9D900792A2C /* CreateAccountVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +37,9 @@
 		AA3F913C21F599B400792A2C /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
 		AA3F913E21F599C400792A2C /* ChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelVC.swift; sourceTree = "<group>"; };
 		AA3F914021F5A54200792A2C /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		AA3F914321F5B1FC00792A2C /* Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constraints.swift; sourceTree = "<group>"; };
+		AA3F914521F5B9C500792A2C /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		AA3F914721F5B9D900792A2C /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
 		BFDB64A0F0E9078965D2EA2F /* Pods-Smack-Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smack-Demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Smack-Demo/Pods-Smack-Demo.debug.xcconfig"; sourceTree = "<group>"; };
 		F8E545C937A08B6F0D51AD23 /* Pods-Smack-Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smack-Demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Smack-Demo/Pods-Smack-Demo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -88,6 +94,7 @@
 		AA3F910F21F5926700792A2C /* Smack-Demo */ = {
 			isa = PBXGroup;
 			children = (
+				AA3F914221F5B0D800792A2C /* Utilities */,
 				AA3F913B21F5999C00792A2C /* Model */,
 				AA3F913A21F5999700792A2C /* View */,
 				AA3F913921F5998E00792A2C /* Controller */,
@@ -117,6 +124,8 @@
 			children = (
 				AA3F913C21F599B400792A2C /* ChatVC.swift */,
 				AA3F913E21F599C400792A2C /* ChannelVC.swift */,
+				AA3F914521F5B9C500792A2C /* LoginVC.swift */,
+				AA3F914721F5B9D900792A2C /* CreateAccountVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -134,6 +143,14 @@
 			children = (
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		AA3F914221F5B0D800792A2C /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				AA3F914321F5B1FC00792A2C /* Constraints.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,8 +252,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA3F911121F5926700792A2C /* AppDelegate.swift in Sources */,
+				AA3F914421F5B1FC00792A2C /* Constraints.swift in Sources */,
+				AA3F914621F5B9C500792A2C /* LoginVC.swift in Sources */,
 				AA3F911921F5926700792A2C /* Smack_Demo.xcdatamodeld in Sources */,
 				AA3F914121F5A54200792A2C /* GradientView.swift in Sources */,
+				AA3F914821F5B9D900792A2C /* CreateAccountVC.swift in Sources */,
 				AA3F913821F5986F00792A2C /* SWRevealViewController.m in Sources */,
 				AA3F913F21F599C400792A2C /* ChannelVC.swift in Sources */,
 				AA3F913D21F599B400792A2C /* ChatVC.swift in Sources */,
