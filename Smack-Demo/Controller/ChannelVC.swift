@@ -13,6 +13,9 @@ class ChannelVC: UIViewController {
     //MARK: outlet setting
     @IBOutlet weak var loginBtn: UIButton!
     
+    //unwind from createAccountVC
+    @IBAction func prepareForUnwind(segue:UIStoryboardSegue){}
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.revealViewController()?.rearViewRevealWidth = self.view.frame.size.width - 60
