@@ -9,12 +9,27 @@
 import UIKit
 
 class LoginVC: UIViewController {
-
+    
+    // MARK: outlets
+    @IBOutlet weak var usernameTxt: UITextField!
+    @IBOutlet weak var passwordTxt: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
+    
+//    @IBAction func loginBtnPressed(_ sender: Any) {
+//        guard let email = usernameTxt.text, usernameTxt.text != "" else {return}
+//        guard let password = passwordTxt.text, passwordTxt.text != "" else {return}
+//
+//        AuthService.instance.loginUser(email: email, password: password) { (success) in
+//            if success {
+//                NotificationCenter.default.post(name: NOTIF_USER_DATA_DID_CHANGE,
+//                                                object:nil)
+//            }
+//        }
+//
+//    }
     
     @IBAction func closeBtnPressed(_ sender: Any) {
         dismiss(animated: true, completion: nil)
