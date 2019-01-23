@@ -109,10 +109,12 @@ class AuthService {
                 guard let data = response.data else {return}
                 let json = try! JSON(data: data)
                 let id = json["_id"].stringValue
-                let color = json["color"].stringValue
+                let color = json["avatarColor"].stringValue
                 let avatarName = json["avatarName"].stringValue
                 let email = json["email"].stringValue
                 let name = json["name"].stringValue
+                print(response)
+                print(color)
                 
                 UserDataService.instance.setUserData(id: id, avatarColor: color, avatarName: avatarName, email: email, name: name)
                 completion(true)
