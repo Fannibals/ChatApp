@@ -31,6 +31,9 @@ class UserDataService {
     
     func returnUIColor(components: String) -> UIColor {
         // "[0.8313725490196079,0.9333333333333333,0.8117647058823529,1.0]",
+        if components == "hexValue" {
+            return UIColor.white
+        }
         if components.count > 0 {
             var myArr = components.split(separator: ",")
             myArr[0] = myArr[0].dropFirst()
