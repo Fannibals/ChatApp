@@ -10,7 +10,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Smack-Demo/Controller/CreateAccountVC.swift"
-            timestampString = "569934916.297418"
+            timestampString = "569936407.744951"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "30"
@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Smack-Demo/Controller/ChannelVC.swift"
-            timestampString = "569934916.297484"
+            timestampString = "569989677.259128"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "32"
-            endingLineNumber = "32"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
             landmarkName = "userDataDidChange(_:)"
             landmarkType = "7">
          </BreakpointContent>
