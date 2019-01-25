@@ -137,6 +137,26 @@ class AuthService {
         }
     }
     
+    func addChannel(channelName: String, description: String, completion: @escaping CompletionHandler) {
+        
+        // WHY
+        let body:[String: Any] = [
+            "name": channelName,
+            "description": description
+        ]
+        
+        Alamofire.request(URL_ADD_CHANNELS, method: .post, parameters: body, encoding: JSONEncoding.default, headers: BEARER_HEADER).responseJSON { (response) in
+            
+            if response.result.error == nil {
+                completion(true)
+            } else {
+                completion(false)
+                debugPrint(response.result.error as Any)
+            }
+        }
+        
+    }
+    
     func setUserInfo(_ data: Data) {
         let json = try! JSON(data: data)
         let id = json["_id"].stringValue
