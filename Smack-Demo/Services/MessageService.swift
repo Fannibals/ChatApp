@@ -18,6 +18,7 @@ class MessageService {
     // variables
     var channels = [Channel]()
     var messages = [Message]()
+    var unreadChannels = [String]()
     var selectedChannel : Channel?
     
     
@@ -78,7 +79,7 @@ class MessageService {
         }
     }
     
-    func clearMessages() {
+    func  clearMessages() {
         messages.removeAll()
     }
     

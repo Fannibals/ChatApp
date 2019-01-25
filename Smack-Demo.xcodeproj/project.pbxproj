@@ -214,8 +214,8 @@
 			children = (
 				AA42989821F6DF6E00EE1461 /* AuthService.swift */,
 				AA42989C21F71AE900EE1461 /* UserDataService.swift */,
-				AA0F8D4621F9C3310006BB71 /* SocketService.swift */,
 				AA0F8D3C21F96D7D0006BB71 /* MessageService.swift */,
+				AA0F8D4621F9C3310006BB71 /* SocketService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";

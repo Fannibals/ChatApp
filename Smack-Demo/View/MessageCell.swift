@@ -23,7 +23,7 @@ class MessageCell: UITableViewCell {
     
     func configureCell(message: Message) {
         messageLbl.text = message.message
-        userNameLbl.text = message.message
+        userNameLbl.text = message.userName
         userImg.image = UIImage(named: message.userAvatar)
         userImg.backgroundColor = UserDataService.instance.returnUIColor(components: message.userAvatarColor)
     }

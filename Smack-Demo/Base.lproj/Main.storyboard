@@ -63,22 +63,6 @@
                                     <constraint firstItem="gy0-QZ-oHY" firstAttribute="centerY" secondItem="KHw-Qa-eA8" secondAttribute="centerY" constant="-2" id="dZn-BK-nAM"/>
                                 </constraints>
                             </view>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder=" message" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hcm-3m-1MX">
-                                <rect key="frame" x="0.0" y="627" width="375" height="40"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="S9N-zz-2kJ"/>
-                                </constraints>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="17"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g8L-Qg-mWG">
-                                <rect key="frame" x="337" y="632" width="30" height="30"/>
-                                <state key="normal" image="send"/>
-                                <connections>
-                                    <action selector="sendBtnPressed:" destination="77n-nF-RO5" eventType="touchUpInside" id="iCN-cP-9Ef"/>
-                                </connections>
-                            </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="5nY-Qv-KqS">
                                 <rect key="frame" x="0.0" y="110" width="375" height="487"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -138,6 +122,31 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder=" message" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hcm-3m-1MX">
+                                <rect key="frame" x="0.0" y="627" width="375" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="S9N-zz-2kJ"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="msgBoxEditing:" destination="77n-nF-RO5" eventType="editingDidEnd" id="fll-T4-PbS"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g8L-Qg-mWG">
+                                <rect key="frame" x="337" y="632" width="30" height="30"/>
+                                <state key="normal" image="send"/>
+                                <connections>
+                                    <action selector="sendBtnPressed:" destination="77n-nF-RO5" eventType="touchUpInside" id="iCN-cP-9Ef"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mrN-Y3-qgg">
+                                <rect key="frame" x="8" y="603" width="317" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -146,10 +155,13 @@
                             <constraint firstItem="aTO-mO-ur2" firstAttribute="top" secondItem="7pv-yi-sil" secondAttribute="top" id="7YA-a7-chd"/>
                             <constraint firstItem="aTO-mO-ur2" firstAttribute="leading" secondItem="7pv-yi-sil" secondAttribute="leading" id="FEs-55-hfJ"/>
                             <constraint firstItem="7pv-yi-sil" firstAttribute="trailing" secondItem="g8L-Qg-mWG" secondAttribute="trailing" constant="8" id="GWH-IE-XiC"/>
+                            <constraint firstItem="mrN-Y3-qgg" firstAttribute="leading" secondItem="7pv-yi-sil" secondAttribute="leading" constant="8" id="Gr9-gr-u1q"/>
                             <constraint firstItem="7pv-yi-sil" firstAttribute="trailing" secondItem="hcm-3m-1MX" secondAttribute="trailing" id="H1d-Gw-NWl"/>
                             <constraint firstItem="hcm-3m-1MX" firstAttribute="leading" secondItem="7pv-yi-sil" secondAttribute="leading" id="May-9D-up4"/>
+                            <constraint firstItem="hcm-3m-1MX" firstAttribute="top" secondItem="mrN-Y3-qgg" secondAttribute="bottom" constant="3" id="R4q-nQ-Clj"/>
                             <constraint firstItem="hcm-3m-1MX" firstAttribute="bottom" secondItem="7pv-yi-sil" secondAttribute="bottom" id="Rqf-pr-pjx"/>
                             <constraint firstItem="7pv-yi-sil" firstAttribute="bottom" secondItem="g8L-Qg-mWG" secondAttribute="bottom" constant="5" id="Rs0-qm-U7w"/>
+                            <constraint firstItem="7pv-yi-sil" firstAttribute="trailing" secondItem="mrN-Y3-qgg" secondAttribute="trailing" constant="50" id="SNU-8b-Ued"/>
                             <constraint firstItem="7pv-yi-sil" firstAttribute="trailing" secondItem="5nY-Qv-KqS" secondAttribute="trailing" id="cDa-01-9Hd"/>
                             <constraint firstItem="hcm-3m-1MX" firstAttribute="top" secondItem="5nY-Qv-KqS" secondAttribute="bottom" constant="30" id="hTN-Is-HO7"/>
                             <constraint firstItem="5nY-Qv-KqS" firstAttribute="top" secondItem="aTO-mO-ur2" secondAttribute="bottom" id="m8J-rb-aGn"/>
@@ -160,7 +172,9 @@
                         <outlet property="channelNameLbl" destination="gy0-QZ-oHY" id="hqA-Ng-2VY"/>
                         <outlet property="menuBtn" destination="KHw-Qa-eA8" id="OZW-zY-fET"/>
                         <outlet property="messageTxtBox" destination="hcm-3m-1MX" id="bSf-ls-5cR"/>
+                        <outlet property="sendBtn" destination="g8L-Qg-mWG" id="XW7-HD-wyN"/>
                         <outlet property="tableView" destination="5nY-Qv-KqS" id="yyJ-Xp-vgf"/>
+                        <outlet property="typingUserLbl" destination="mrN-Y3-qgg" id="yrK-Sf-YSM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V6B-kz-hrz" userLabel="First Responder" sceneMemberID="firstResponder"/>
